@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Modal</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-cover flex items-center justify-center h-screen transition-all" style="background-image: url(img/3.jpg);">
+    <div class="bg-transparent border border-pink-400 backdrop-blur-sm p-8 rounded-lg shadow-lg w-2/3 min-w-64 md:w-[400px] md:h-[400px] md:rounded-full items-center justify-center flex flex-col">
+        <div class="relative flex flex-wrap items-center justify-center max-w-80">
+            <input type="radio" id="login" name="toggle" class="hidden peer/login" checked>
+            <input type="radio" id="signup" name="toggle" class="hidden peer/signup">
+            <label for="login" class="cursor-pointer text-center px-4 py-2 font-medium text-pink-50 peer-checked/login:border-b-2 border-pink-400">Login</label>
+            <label for="signup" class="cursor-pointer px-4 py-2 font-medium text-pink-50 peer-checked/signup:border-b-2 border-pink-400">Signup</label>
+         
+            <form id="loginForm" class="space-y-7 peer-checked/signup:hidden my-6 flex flex-col items-center">
+                <input type="text" id="loginUsername" class="text-pink-50 block border-b border-pink-400 bg-transparent w-full placeholder:text-sm placeholder:text-pink-50 outline-none" placeholder="Enter Username">
+                <input type="password" id="loginPassword" class="text-pink-50 block border-b border-pink-400 bg-transparent w-full placeholder:text-sm placeholder:text-pink-50 outline-none" placeholder="Enter Password">
+                <button type="submit" class="w-3/5 bg-pink-50 font-medium text-pink-400 px-4 py-2 rounded-md drop-shadow hover:scale-105"><a href="home.html" class="w-full flex items-center justify-center">Login</a></button>
+            </form>
+
+            <form id="signupForm" class="space-y-7 hidden peer-checked/signup:flex my-6 flex-col items-center">
+                <input type="email" id="signupEmail" class="text-pink-50 block border-b border-pink-400 bg-transparent w-full placeholder:text-sm placeholder:text-pink-50 outline-none" placeholder="Enter Email">
+                <input type="text" id="signupUsername" class="text-pink-50 block border-b border-pink-400 bg-transparent w-full placeholder:text-sm placeholder:text-pink-50 outline-none" placeholder="Enter Username">     
+                <input type="password" id="signupPassword" class="text-pink-50 block border-b border-pink-400 bg-transparent w-full placeholder:text-sm placeholder:text-pink-50 outline-none" placeholder="Enter Password">
+                <button type="submit" class="w-3/5 bg-pink-50 font-medium text-pink-400 px-4 py-2 rounded-md drop-shadow hover:scale-105"><a href="home.html" class="w-full flex items-center justify-center">Signup</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

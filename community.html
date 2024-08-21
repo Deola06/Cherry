@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Poetry Website</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+        .custom-clip-path {
+            clip-path: url(#clip-path);
+        }
+        .active{
+            background: linear-gradient(to bottom right, #ec4899, #831843 );
+        }
+    </style>
+</head>
+<body class="overflow-hidden bg-cover flex flex-col items-center justify-center h-screen transition-all duration-500 ease-in-out relative bg-fixed" style="background-image: url(img/3.jpg);">
+    <svg width="0" height="0">
+        <clipPath id="clip-path" clipPathUnits="objectBoundingBox">
+            <polygon points="0.000 0.000, 0.040 0.040, 0.090 0.055, 0.250 0.080, 0.375 0.095, 0.575 0.115, 0.720 0.130, 0.900 0.155, 0.960 0.170, 0.995 0.190, 0.995 0.810, 0.960 0.830, 0.900 0.845, 0.720 0.870, 0.575 0.885, 0.375 0.905, 0.250 0.920, 0.090 0.945, 0.040 0.960, 0.000 1.000, 0.000 0.000">
+            </polygon>
+        </clipPath>
+    </svg>
+    <div class="bg-pink-400 left-0 flex flex-row-reverse items-center justify-evenly peer h-auto w-auto fixed custom-clip-path transition-all duration-500 ease-in-out z-50">
+        <input type="checkbox" name="bar" id="bar" class="hidden peer">
+        <label for="bar" class="flex flex-row items-center justify-center cursor-pointer pl-1 pr-2 py-6">
+            <img src="img/m.png" class="h-12" alt="">
+        </label>
+        <nav class="hidden peer-checked:flex flex-col items-center justify-center h-full space-y-3 pl-[6px] pr-1 py-20">
+            <a class="w-full" href="home.html"><img src="img/1724060402228.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="archive.html"><img src="img/1724060402214.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="community.html"><img src="img/1724060402192.png" class="active h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="write.html"><img src="img/1724061523547.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="settings.html"><img src="img/1721150791351.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+        </nav>
+    </div>
+    
+    <main class="bg-transparent border text-pink-50  border-pink-400 backdrop-blur-sm p-8 shadow-lg w-5/6 h-5/6 max-w-screen-lg items-center flex flex-col">
+        <section class="text-center py-4">
+            <h3 class="md:text-4xl font-serif mb-2">Community</h3>
+            <hr class="border-t-2 border-pink-400 w-1/4 mx-auto">
+        </section>
+        <section class="w-full flex flex-col max-w-screen-md space-y-6 py-8 overflow-y-scroll outline-none" style="scrollbar-width: none;">
+            <div class="bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg space-y-4">
+                <div class="flex items-center space-x-4">
+                    <img src="img/1723800295439.jpg" class="w-10 h-10 rounded-full" alt="User Profile Picture">
+                    <div>
+                        <p class="font-bold md:text-base text-sm">Jade Doe</p>
+                        <p class="text-xs md:text-sm">Feeling inspired today! 🌸</p>
+                    </div>
+                </div>
+                <p class="text-sm md:text-base">Just finished writing a new poem about the beauty of fleeting moments. Can't wait to share it with you all!</p>
+                <div>
+                    <span class="text-xs ">3 mins ago</span>
+                </div>
+            </div>
+            <div class="bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg space-y-4">
+                <div class="flex items-center space-x-4">
+                    <img src="img/1723800295439.jpg" class="w-10 h-10 rounded-full" alt="User Profile Picture">
+                    <div>
+                        <p class="font-bold md:text-base text-sm">Alex Smith</p>
+                        <p class="text-xs md:text-sm">Thoughts on nature</p>
+                    </div>
+                </div>
+                <p class="text-sm md:text-base">Nature has always been my muse. There's something magical about the stillness of a forest...</p>
+                <img src="img/images4.jpg" class="md:px-4 w-full" alt="">
+                <div>
+                    <span class="text-xs">10 mins ago</span>
+                </div>
+            </div>
+            <div class="bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg space-y-4">
+                <div class="flex items-center space-x-4">
+                    <img src="img/1723800295439.jpg" class="w-10 h-10 rounded-full" alt="User Profile Picture">
+                    <div>
+                        <p class="font-bold md:text-base text-sm">Jade Doe</p>
+                        <p class="text-xs md:text-sm">Feeling inspired today! 🌸</p>
+                    </div>
+                </div>
+                <p class="text-sm md:text-base">Just finished writing a new poem about the beauty of fleeting moments. Can't wait to share it with you all!</p>
+                <div>
+                    <span class="text-xs ">3 mins ago</span>
+                </div>
+            </div>
+            <div class="bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg space-y-4">
+                <div class="flex items-center space-x-4">
+                    <img src="img/1723800295439.jpg" class="w-10 h-10 rounded-full" alt="User Profile Picture">
+                    <div>
+                        <p class="font-bold md:text-base text-sm">Alex Smith</p>
+                        <p class="text-xs md:text-sm">Thoughts on nature</p>
+                    </div>
+                </div>
+                <p c>Nature has always been my muse. There's something magical about the stillness of a forest...</p>
+                <div>
+                    <span class="text-xs">10 mins ago</span>
+                </div>
+            </div>
+        </section>
+        <footer class="items-center justify-center mt-6 flex flex-row space-x-3">
+            <img class="w-5 hover:scale-105" src="img/insta.png" alt="">
+            <img class="w-5 hover:scale-105" src="img/pin.png" alt="">
+            <img class="w-5 hover:scale-105" src="img/twit.png" alt="">
+        </footer>
+    </main>
+</body>
+</html>

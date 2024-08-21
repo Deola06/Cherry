@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+        .custom-clip-path {
+            clip-path: url(#clip-path);
+        }
+        .active{
+            background: linear-gradient(to bottom right, #ec4899, #831843 );
+        }
+    </style>
+</head>
+<body class="overflow-hidden bg-cover flex flex-col items-center justify-center h-screen transition-all duration-500 ease-in-out relative bg-fixed" style="background-image: url(img/3.jpg);">
+    <svg width="0" height="0">
+        <clipPath id="clip-path" clipPathUnits="objectBoundingBox">
+            <polygon points="0.000 0.000, 0.040 0.040, 0.090 0.055, 0.250 0.080, 0.375 0.095, 0.575 0.115, 0.720 0.130, 0.900 0.155, 0.960 0.170, 0.995 0.190, 0.995 0.810, 0.960 0.830, 0.900 0.845, 0.720 0.870, 0.575 0.885, 0.375 0.905, 0.250 0.920, 0.090 0.945, 0.040 0.960, 0.000 1.000, 0.000 0.000">
+            </polygon>
+        </clipPath>
+    </svg>
+    <div class="bg-pink-400 left-0 flex flex-row-reverse items-center justify-evenly peer h-auto w-auto fixed custom-clip-path transition-all duration-500 ease-in-out z-50">
+        <input type="checkbox" name="bar" id="bar" class="hidden peer">
+        <label for="bar" class="flex flex-row items-center justify-center cursor-pointer pl-1 pr-2 py-6">
+            <img src="img/m.png" class="h-12" alt="">
+        </label>
+        <nav class="hidden peer-checked:flex flex-col items-center justify-center h-full space-y-3 pl-[6px] pr-1 py-20">
+            <a class="w-full" href="home.html"><img src="img/1724060402228.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="archive.html"><img src="img/1724060402214.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="community.html"><img src="img/1724060402192.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="write.html"><img src="img/1724061523547.png" class="h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+            <a class="w-full" href="settings.html"><img src="img/1721150791351.png" class="active h-auto hover:bg-gradient-to-br from-pink-500 to-pink-900 rounded-xl p-3" alt=""></a>
+        </nav>
+    </div>
+    <main class="bg-transparent border text-pink-100 border-pink-400 backdrop-blur-sm p-8 shadow-lg w-5/6 h-5/6 max-w-screen-lg items-center flex flex-col overflow-hidden">
+        <section class="settings-header text-center py-4">
+            <h3 class="md:text-4xl font-serif mb-2">Settings</h3>
+            <hr class="border-t-2 border-pink-400 w-1/4 mx-auto">
+        </section>
+
+        <div class="overflow-y-scroll w-full text-left text-xs md:text-base">
+            <section class="col-span-3 flex flex-col items-start py-4">
+                <h5 class="md:text-2xl font-serif mb-4">Account Settings</h5>
+                <div class="w-full flex flex-col space-y-4 bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Profile Picture</span>
+                        <input type="file" class="bg-pink-50 text-pink-900 rounded p-2 w-32 sm:w-64">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Username</span>
+                        <input type="text" class="bg-pink-50 text-pink-900 rounded p-2 w-32 sm:w-64">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Email</span>
+                        <input type="email" class="bg-pink-50 text-pink-900 rounded p-2 w-32 sm:w-64">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Password</span>
+                        <input type="password" class="bg-pink-50 text-pink-900 rounded p-2 w-32 sm:w-64">
+                    </label>
+                </div>
+            </section>
+    
+            <section class=" flex flex-col items-start py-4">
+                <h5 class="md:text-2xl font-serif mb-4">Personalization</h5>
+                <div class="w-full flex flex-col space-y-4 bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Theme</span>
+                        <select class="bg-pink-50 text-pink-900 rounded p-2 w-64">
+                            <option>Light</option>
+                            <option>Dark</option>
+                            <option>Cherry Blossom</option>
+                            <option>Night Sky</option>
+                        </select>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Font Size</span>
+                        <input type="number" min="12" max="24" value="16" class="bg-pink-50 text-pink-900 rounded p-2 w-64">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Text Alignment</span>
+                        <select class="bg-pink-50 text-pink-900 rounded p-2 w-64">
+                            <option>Left</option>
+                            <option>Center</option>
+                            <option>Right</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+        
+            <section class=" flex flex-col items-start py-4">
+                <h5 class="md:text-2xl font-serif mb-4">Privacy & Security</h5>
+                <div class="w-full flex flex-col space-y-4 bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Profile Visibility</span>
+                        <select class="bg-pink-50 text-pink-900 rounded p-2 w-64">
+                            <option>Everyone</option>
+                            <option>Friends</option>
+                            <option>Private</option>
+                        </select>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Poem Visibility</span>
+                        <select class="bg-pink-50 text-pink-900 rounded p-2 w-64">
+                            <option>Public</option>
+                            <option>Friends</option>
+                            <option>Private</option>
+                        </select>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Two-Factor Authentication</span>
+                        <input type="checkbox" class="bg-pink-50 text-pink-900 rounded p-2 accent-pink-500 w-7">
+                    </label>
+                </div>
+            </section>
+
+            <section class=" flex flex-col items-start py-4">
+                <h5 class="md:text-2xl font-serif mb-4">Notifications</h5>
+                <div class="w-full flex flex-col space-y-4 bg-pink-200/30 backdrop-blur-lg p-4 rounded-lg shadow-lg">
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Email Notifications</span>
+                        <input type="checkbox" checked class="bg-pink-50 text-pink-900 rounded p-2 accent-pink-500">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">Push Notifications</span>
+                        <input type="checkbox" class="bg-pink-50 text-pink-900 rounded p-2 accent-pink-500">
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <span class="w-24 sm:w-40">In-App Notifications</span>
+                        <input type="checkbox" checked class="bg-pink-50 text-pink-900 rounded p-2 accent-pink-500">
+                    </label>
+                </div>
+            </section>
+        </div>
+        
+            
+        <footer class="items-center justify-center mt-6 flex flex-row space-x-3">
+            <img class="w-5 hover:scale-105" src="img/insta.png" alt="">
+            <img class="w-5 hover:scale-105" src="img/pin.png" alt="">
+            <img class="w-5 hover:scale-105" src="img/twit.png" alt="">
+        </footer>
+    </main>
+</body>
+</html>
